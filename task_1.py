@@ -1,4 +1,3 @@
-import math
 import random
 import matplotlib.pyplot as plt
 
@@ -34,6 +33,5 @@ if __name__ == '__main__':
     print(frequency_dict)
     print(relative_frequency)
     print(sum(relative_frequency))
-    printing_vals = [x / inter_length for x in frequency_dict.values()]
-    plt.hist(printing_vals, density=True, bins=10)
+    plt.hist(frequency_dict.values(), density=True, bins=10)
     plt.show()
