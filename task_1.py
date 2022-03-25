@@ -9,8 +9,8 @@ if __name__ == '__main__':
     rand_arr = []
     for _ in range(100):
         temp = k * a / (q ** d)
-        a = (temp - int(temp)) * 10 ** (len(str(temp - int(temp))) - 2)
-        rand_arr.append(a / 10 ** len((str(a))))
+        a = (temp - int(temp)) * 10 ** 8
+        rand_arr.append(float(f'0.{int(a)}'))
     print('\n'.join(map(str, rand_arr)))
     math_wait = sum(rand_arr) / len(rand_arr)
     print(f'Матожидание: {math_wait}')
